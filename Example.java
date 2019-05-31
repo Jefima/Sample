@@ -1,19 +1,13 @@
-public class Fibonacci {
+public class Pattern {
 
     public static void main(String[] args) {
+        int rows = 5;
 
-        int i = 1, n = 10, t1 = 0, t2 = 1;
-        System.out.print("First " + n + " terms: ");
-
-        while (i <= n)
-        {
-            System.out.print(t1 + " + ");
-
-            int sum = t1 + t2;
-            t1 = t2;
-            t2 = sum;
-
-            i++;
+        for(int i = 1; i <= rows; ++i) {
+            for(int j = 1; j <= i; ++j) {
+                System.out.print("* ");
+            }
+            System.out.println();
         }
     }
 }
